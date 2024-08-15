@@ -68,7 +68,7 @@ const CommandInput: React.FC = () => {
       const commandDescription = Object.values(command)[0];
       output = `${commandDescription}`;
     } else {
-      output = `Command not found: ${commandName} - Type 'help' to see list of available commands.`;
+      output = `Command not found ${commandName} - Type 'help' to see list of available commands.`;
     }
 
     const newInputs = [...inputs];
