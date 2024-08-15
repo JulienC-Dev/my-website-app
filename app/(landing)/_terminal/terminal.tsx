@@ -72,7 +72,6 @@ const CommandInput: React.FC = () => {
     }
 
     const newInputs = [...inputs];
-    newInputs[index] = ""; // Optionally clear the current input
     setInputs([...newInputs, ""]); // Add a new input field
 
     // Store the command output
@@ -105,7 +104,9 @@ const CommandInput: React.FC = () => {
             onKeyDown={(event) => handleKeyDown(index, event)}
             disabled={index < inputs.length - 1} // Disable previous inputs
             className="border-none outline-none bg-amber-100"
-            ref={(el: HTMLInputElement | null) => { inputRefs.current[index] = el; }} // Assign ref to the input
+            ref={(el: HTMLInputElement | null) => {
+              inputRefs.current[index] = el;
+            }} // Assign ref to the input
           />
           {outputs[index] && <p>{outputs[index]}</p>}{" "}
           {/* Display command output */}

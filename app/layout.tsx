@@ -45,7 +45,7 @@ export default function RootLayout({
         </div>
 
         {/* Content */}
-        <div className="flex-grow bg-amber-100 overflow-auto my-10 mx-10 border-amber-300 border-2">
+        <div className="flex-grow bg-amber-100 overflow-auto md:my-10 md:mx-10 border-amber-300 border-2">
           {children}
         </div>
       </body>
