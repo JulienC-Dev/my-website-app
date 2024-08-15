@@ -53,6 +53,7 @@ const CommandInput: React.FC = () => {
     } else if (event.key === "Enter") {
       event.preventDefault();
       handleCommandExecution(index);
+      setFilteredCommands([]);
     }
   };
 
@@ -104,7 +105,7 @@ const CommandInput: React.FC = () => {
             onKeyDown={(event) => handleKeyDown(index, event)}
             disabled={index < inputs.length - 1} // Disable previous inputs
             className="border-none outline-none bg-amber-100"
-            ref={(el) => (inputRefs.current[index] = el)} // Assign ref to the input
+            ref={(el: HTMLInputElement | null) => { inputRefs.current[index] = el; }} // Assign ref to the input
           />
           {outputs[index] && <p>{outputs[index]}</p>}{" "}
           {/* Display command output */}

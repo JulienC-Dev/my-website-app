@@ -4,8 +4,9 @@ export type Command = {
 export const listOfCommand: Command[] = [
   { whoami: "I m julien" },
   {
-    help: "Supported commands: ['about', 'experience', 'education', 'skills', 'contact']",
+    help: "Supported commands: ['whoami', 'stack', 'github', 'linkedin']",
   },
-  { github: "my github" },
+  { github: "https://github.com/JulienC-Dev" },
   { stack: "Python, Next.js, TypeScript, Docker, Kubernetes, AWS" },
+  { linkedin: "https://www.linkedin.com/in/julien-cormier-41696778/" },
 ];
