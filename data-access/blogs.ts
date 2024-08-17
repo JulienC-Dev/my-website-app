@@ -125,7 +125,7 @@ const getBlogs: Blog[] = [
         ],
       },
     ],
-    created_at: "2024-03-14",
+    created_at: "2024-10-2",
     author_name: "Julien",
     badge_techno: [
       "Python",
@@ -151,7 +151,7 @@ const getBlogs: Blog[] = [
         ],
       },
       {
-        subtitle: "Why Understanding Business Matters & IA world",
+        subtitle: "Why Understanding Business Matters",
         paragraphs: [
           "In today's fast-paced world of artificial intelligence and rapid technological advancement, I firmly believe that understanding the business domain is just as crucial as having technical expertise.",
           "Before diving into coding, I focus on understanding the core business challenges and the specific needs of both the industry and the end users. This approach allows me to recognize potential trade-offs and make well-informed decisions that align technological solutions with business objectives.",
@@ -190,24 +190,19 @@ const getBlogs: Blog[] = [
         ],
       },
       {
-        subtitle: "Automate risks report for a privrate financial socity",
+        subtitle:
+          "Automate risks report & operational activities for an asset management company",
         paragraphs: [
-          "In cybersecurity, having a well-structured approach to managing and processing events is essential. I collaborated with a team to create a Directed Acyclic Graph (DAG) from scratch to help manage tasks and create efficient workflows",
-          "We built a scalable product to manage millions of events. I’ve had the opportunity to work with various stacks, including backend, frontend, tooling, databases, and a cloud provider.",
-        ],
-      },
-      {
-        subtitle: "Frontend Snapshots of Various Projects",
-        paragraphs: [
-          "* I have obtained permission from the companies to use these images, ensuring that all privacy, security, and licensing",
+          "Risk is everything in finance. I’ve built several tools in Python to monitor and alert on various trading floor operations.",
+          "I used Pandas to automate counterparty follow-ups, including order settlements, coupon payments, various reports utilizing Microsoft's API as an email sending service.",
         ],
       },
     ],
-    created_at: "2024-05-17",
+    created_at: "2024-5-20",
     author_name: "Julien",
     badge_techno: ["self"],
     pictures: {
-      main_picture: "/testhighlvl.png",
+      main_picture: "/boat-sun.webp",
     },
     github_link: "https://github.com/JulienC-Dev/",
   },
