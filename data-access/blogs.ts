@@ -140,6 +140,77 @@ const getBlogs: Blog[] = [
     },
     github_link: "https://github.com/JulienC-Dev/my-website-app",
   },
+  {
+    id_blog: "self",
+    title: "My journey & projects",
+    sections: [
+      {
+        subtitle: "Introduction",
+        paragraphs: [
+          "My journey in the tech world has been driven by a deep commitment to not only mastering technical skills but also understanding the broader context in which technology, especially with the increasing influence of artificial intelligence, operates.",
+        ],
+      },
+      {
+        subtitle: "Why Understanding Business Matters & IA world",
+        paragraphs: [
+          "In today's fast-paced world of artificial intelligence and rapid technological advancement, I firmly believe that understanding the business domain is just as crucial as having technical expertise.",
+          "Before diving into coding, I focus on understanding the core business challenges and the specific needs of both the industry and the end users. This approach allows me to recognize potential trade-offs and make well-informed decisions that align technological solutions with business objectives.",
+        ],
+      },
+      {
+        subtitle: "My Mindset as a Developer",
+        paragraphs: [
+          "I hold that a great developer is, first and foremost, a keen user of their own solutions. This perspective drives me to conduct thorough end-to-end testing and explore various user scenarios. By putting myself in the user's shoes, I ensure that the solutions I develop are not only technically sound but also user-friendly and effective.",
+          "Robust monitoring tools are crucial for maintaining the performance and reliability of scalable products.",
+          "Start testing once MVP is developed.",
+          "I'm also open to evolving my mindset, and I find that to be an exciting aspect of my journey.",
+        ],
+      },
+      {
+        subtitle: "Enhancing Developer Experience & Productivity",
+        paragraphs: [
+          "Improving the developer experience (DX) is another area where I focus my efforts. I am passionate about automating CI/CD pipelines to streamline development processes, reduce manual effort, and enhance productivity.",
+        ],
+      },
+      {
+        subtitle: "My Tech Stack",
+        paragraphs: [
+          "To support my work, I leverage a diverse tech stack that includes",
+          "Python: For building versatile applications and automation scripts.",
+          "Next.js: For creating dynamic and performant web applications.",
+          "Kubernetes: For orchestrating containerized applications and ensuring scalability.",
+        ],
+      },
+      {
+        subtitle:
+          "Building a Directed Acyclic Graph (DAG) for a cybersecurity firm",
+        paragraphs: [
+          "In cybersecurity, having a well-structured approach to managing and processing events is essential. I collaborated with a team to create a Directed Acyclic Graph (DAG) from scratch to help manage tasks and create efficient workflows",
+          "We built a scalable product to manage millions of events. I’ve had the opportunity to work with various stacks, including backend, frontend, tooling, databases, and a cloud provider.",
+        ],
+      },
+      {
+        subtitle: "Automate risks report for a privrate financial socity",
+        paragraphs: [
+          "In cybersecurity, having a well-structured approach to managing and processing events is essential. I collaborated with a team to create a Directed Acyclic Graph (DAG) from scratch to help manage tasks and create efficient workflows",
+          "We built a scalable product to manage millions of events. I’ve had the opportunity to work with various stacks, including backend, frontend, tooling, databases, and a cloud provider.",
+        ],
+      },
+      {
+        subtitle: "Frontend Snapshots of Various Projects",
+        paragraphs: [
+          "* I have obtained permission from the companies to use these images, ensuring that all privacy, security, and licensing",
+        ],
+      },
+    ],
+    created_at: "2024-05-17",
+    author_name: "Julien",
+    badge_techno: ["self"],
+    pictures: {
+      main_picture: "/testhighlvl.png",
+    },
+    github_link: "https://github.com/JulienC-Dev/",
+  },
 ];
 
 export function getBlogById(id: string): Blog {
