@@ -154,7 +154,7 @@ const getBlogs: Blog[] = [
         subtitle: "Why Understanding Business Matters",
         paragraphs: [
           "In today's fast-paced world of artificial intelligence and rapid technological advancement, I firmly believe that understanding the business domain is just as crucial as having technical expertise.",
-          "Before diving into coding, I focus on understanding the core business challenges and the specific needs of both the industry and the end users. This approach allows me to recognize potential trade-offs and make well-informed decisions that align technological solutions with business objectives.",
+          "Before diving into coding, I focus on understanding the core business challenges and the specific needs of end users. This approach allows me to recognize potential trade-offs and make well-informed decisions that align technological solutions with business objectives.",
         ],
       },
       {
@@ -162,7 +162,7 @@ const getBlogs: Blog[] = [
         paragraphs: [
           "I hold that a great developer is, first and foremost, a keen user of their own solutions. This perspective drives me to conduct thorough end-to-end testing and explore various user scenarios. By putting myself in the user's shoes, I ensure that the solutions I develop are not only technically sound but also user-friendly and effective.",
           "Robust monitoring tools are crucial for maintaining the performance and reliability of scalable products.",
-          "Start testing once MVP is developed.",
+          "Start testing once MVP is developed. Speed and interaction are crucial in the AI world.",
           "I'm also open to evolving my mindset, and I find that to be an exciting aspect of my journey.",
         ],
       },
@@ -185,8 +185,8 @@ const getBlogs: Blog[] = [
         subtitle:
           "Building a Directed Acyclic Graph (DAG) for a cybersecurity firm",
         paragraphs: [
-          "In cybersecurity, having a well-structured approach to managing and processing events is essential. I collaborated with a team to create a Directed Acyclic Graph (DAG) from scratch to help manage tasks and create efficient workflows",
-          "We built a scalable product to manage millions of events. I’ve had the opportunity to work with various stacks, including backend, frontend, tooling, databases, and a cloud provider.",
+          "In cybersecurity, having a well-structured approach to managing and processing events is essential. I collaborated with a team to create a Directed Acyclic Graph (DAG) from scratch to help manage tasks and create efficient workflows.",
+          "We built a scalable product to manage millions of events. I’ve had the opportunity to work with various stacks, including backend, frontend, tooling, databases, and cloud provider.",
         ],
       },
       {
@@ -194,7 +194,7 @@ const getBlogs: Blog[] = [
           "Automate risks report & operational activities for an asset management company",
         paragraphs: [
           "Risk is everything in finance. I’ve built several tools in Python to monitor and alert on various trading floor operations.",
-          "I used Pandas to automate counterparty follow-ups, including order settlements, coupon payments, various reports utilizing Microsoft's API as an email sending service.",
+          "I used Pandas to automate counterparty follow-ups, including order settlements, coupon payments, and various reports utilizing Microsoft's API as an email sending service. Pytest is the library used for unit testing.",
         ],
       },
     ],
