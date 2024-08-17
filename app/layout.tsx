@@ -43,11 +43,8 @@ export default function RootLayout({
           <NavigationMenuHeader />
           <AvatarHeader />
         </div>
-
         {/* Content */}
-        <div className="flex-grow bg-amber-100 overflow-auto md:my-10 md:mx-10 border-amber-300 border-2">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );

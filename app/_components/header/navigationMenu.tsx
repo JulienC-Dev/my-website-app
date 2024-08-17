@@ -56,10 +56,11 @@ export function NavigationMenuHeader() {
                 An interesting automatisation using ansible & python.
               </ListItem>
               <ListItem href="/" title="Websocket">
-                Cool websocket implementation.
+                Cool websocket implementation for real-time data using Terraform
+                & AWS.
               </ListItem>
-              <ListItem href="/" title="Project">
-                An interesting project.
+              <ListItem href="/" title="Security">
+                How to secure a k8s cluster.
               </ListItem>
             </ul>
           </NavigationMenuContent>
