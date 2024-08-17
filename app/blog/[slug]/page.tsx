@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Icons } from "@/components/ui/Icons";
 import { getBlogById } from "@/data-access/blogs";
 import Image from "next/image";
 
@@ -27,10 +28,23 @@ export default function Blog({ params }: { params: { slug: string } }) {
               </Badge>
             ))}
           </div>
+          <div className="mt-4">
+            {blog.github_link && (
+              <a
+                href={blog.github_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Icons.gitHub className="w-5 h-5" />
+                <span>View on GitHub</span>
+              </a>
+            )}
+          </div>
         </div>
-        {blog.image && (
+        {blog.pictures.main_picture && (
           <Image
-            src={blog.image}
+            src={blog.pictures.main_picture}
             alt={blog.title}
             width={720}
             height={405}
@@ -51,6 +65,20 @@ export default function Blog({ params }: { params: { slug: string } }) {
               ))}
             </section>
           ))}
+        </div>
+        <div>
+          {blog.pictures.additional_picture &&
+            (blog.pictures.additional_picture ?? []).map((picture, index) => (
+              <Image
+                key={index}
+                src={picture}
+                alt={blog.title}
+                width={720}
+                height={405}
+                className="my-8 rounded-md border bg-muted transition-colors"
+                priority
+              />
+            ))}
         </div>
       </article>
     </div>

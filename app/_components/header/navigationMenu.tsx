@@ -18,12 +18,12 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "In construction",
-    href: "/games/name-a",
+    href: "/",
     description: "Fun game.",
   },
   {
     title: "In construction",
-    href: "/games/name-b",
+    href: "/",
     description: "Fun game.",
   },
 ];
@@ -52,8 +52,11 @@ export function NavigationMenuHeader() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/" title="Automatisation">
-                An interesting automatisation using ansible & python.
+              <ListItem
+                href="/blog/k8s-aws-ansible-deployment"
+                title="Automatisation"
+              >
+                Deploying a K8s Cluster on AWS using Ansible.
               </ListItem>
               <ListItem href="/" title="Websocket">
                 Cool websocket implementation for real-time data using Terraform
