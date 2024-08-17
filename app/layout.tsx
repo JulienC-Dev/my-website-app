@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Roboto as FontRoboto, Inter as FontSans } from "next/font/google"; // Import Roboto font
 import { AvatarHeader } from "./_components/header/avatar";
+import { HoverCardHeader } from "./_components/header/hover-card";
 import { NavigationMenuHeader } from "./_components/header/navigationMenu";
 import "./globals.css";
 
@@ -41,7 +42,10 @@ export default function RootLayout({
         {/* Header */}
         <div className="flex justify-between mx-2 my-1">
           <NavigationMenuHeader />
-          <AvatarHeader />
+          <div className="flex gap-2 justify-between items-center">
+            <HoverCardHeader />
+            <AvatarHeader />
+          </div>
         </div>
         {/* Content */}
         {children}
