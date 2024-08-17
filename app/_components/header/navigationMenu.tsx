@@ -15,19 +15,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "In construction",
-    href: "/",
-    description: "Fun game.",
-  },
-  {
-    title: "In construction",
-    href: "/",
-    description: "Fun game.",
-  },
-];
-
 export function NavigationMenuHeader() {
   return (
     <NavigationMenu>
@@ -65,25 +52,12 @@ export function NavigationMenuHeader() {
                 Cool websocket implementation for real-time data using Terraform
                 & AWS.
               </ListItem>
-              <ListItem href="/" title="Security">
+              <ListItem
+                href="/blog/audit-k8s-security-cluster"
+                title="Security"
+              >
                 How to secure a k8s cluster.
               </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Games</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

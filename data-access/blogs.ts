@@ -206,6 +206,30 @@ const getBlogs: Blog[] = [
     },
     github_link: "https://github.com/JulienC-Dev/",
   },
+  {
+    id_blog: "audit-k8s-security-cluster",
+    title: "How to Secure Your Kubernetes Cluster: A Comprehensive Guide",
+    sections: [
+      {
+        subtitle: "Introduction",
+        paragraphs: [
+          "Kubernetes has become the de facto standard for container orchestration, enabling organizations to deploy, scale, and manage containerized applications with ease. However, with great power comes great responsibility, and securing your Kubernetes cluster is paramount to safeguarding your applications and data.",
+          "In this guide, I'll walk you through the essential steps to secure your Kubernetes cluster, covering best practices, tools, and configurations to protect against common security threats.",
+        ],
+      },
+      {
+        subtitle: "Secrets have to live somewhere",
+        paragraphs: ["In Construction ", "🚧🚧🚧🚀🚀🚀"],
+      },
+    ],
+    created_at: "2024-5-20",
+    author_name: "Julien",
+    badge_techno: ["K8s", "Linux", "Containerization", "hashicorp vault"],
+    pictures: {
+      main_picture: "/cybersecurity.webp",
+    },
+    github_link: "https://github.com/JulienC-Dev/",
+  },
 ];
 
 export function getBlogById(id: string): Blog {
