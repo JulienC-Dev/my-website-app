@@ -68,38 +68,77 @@ const getBlogs: Blog[] = [
     ],
     created_at: "2023-10-12",
     author_name: "Julien",
-    badge_techno: ["Ansible", "AWS EC2", "K8s"],
+    badge_techno: ["Ansible", "AWS", "EC2", "K8s"],
     pictures: {
       main_picture: "/testhighlvl.png",
     },
     github_link: "https://github.com/JulienC-Dev/my-website-app",
   },
   {
-    id_blog: "websokets-python",
-    title: "Websockets with Python",
+    id_blog: "websokets-python-terraform-aws-services",
+    title:
+      "Building a Scalable WebSocket Architecture for Cryptocurrency Data with Terraform and AWS",
     sections: [
       {
-        subtitle: "Understanding Websockets",
+        subtitle: "Introduction",
         paragraphs: [
-          "Websockets provide a full-duplex communication channel over a single TCP connection.",
-          "This technology is particularly useful for applications requiring real-time data updates.",
+          "In today's fast-paced world of cryptocurrency trading, having real-time access to data is crucial. To meet this demand, I developed a WebSocket server capable of receiving connections from multiple clients simultaneously. This setup not only allows us to handle a large number of client connections but also ensures low-latency data transfer, which is critical for performing price arbitrage between different exchanges.",
+          "The architecture is deployed on AWS using Terraform, leveraging services like Amazon ECS and Fargate to manage the server and client infrastructure. All data collected from various cryptocurrency exchanges, such as Binance, is stored in DynamoDB, providing a robust and scalable solution. The entire infrastructure is designed to scale dynamically, ensuring that we can handle increasing loads as more clients and data sources are added.",
         ],
       },
       {
-        subtitle: "Implementing Websockets in Python",
+        subtitle: "Architecture Overview",
         paragraphs: [
-          "Python has several libraries that make working with Websockets easy.",
-          "Among them are websockets and socket.io.",
+          "The core of the architecture revolves around a WebSocket server that acts as a central hub for receiving and processing data from multiple clients. Here's a breakdown of the key components:",
+          "WebSocket Server: The server is responsible for handling incoming WebSocket connections from clients. It receives real-time cryptocurrency data from multiple sources, processes it, and broadcasts it to connected clients.",
+          "Clients: The clients connect to the WebSocket server to receive real-time data. These could be comsumed by trading bots, and front-end application.",
+          "Amazon ECS and Fargate: The WebSocket server and clients are deployed using Amazon ECS and Fargate, which handle the orchestration and scaling of containers. This setup ensures that our architecture can scale automatically based on demand, providing a resilient and cost-effective solution.",
+          "DynamoDB: All incoming data is stored in DynamoDB, a fully managed NoSQL database that offers fast and predictable performance. Storing the data in DynamoDB allows us to perform complex queries, such as price comparisons between exchanges, enabling real-time arbitrage opportunities. Redis can also be a good challenger for this use case :)",
+          "Terraform: Terraform is used to manage the entire infrastructure as code. This includes provisioning resources like ECS clusters, Fargate tasks, DynamoDB tables, and API Gateway for the WebSocket endpoint. By managing infrastructure state with Terraform, we can ensure that deployments are repeatable and consistent.",
+        ],
+      },
+      {
+        subtitle: "Deployment Process",
+        paragraphs: [
+          "Let's dive into the deployment process, which involves setting up the WebSocket, deploying it to AWS, and configuring the infrastructure using Terraform.",
+          "1. Setting Up the WebSocket Server and Websocket client: The WebSocket server and client are developed using the lightweight Python frameworks websockets-server and websockets-client. The server is responsible for listening to incoming connections and processing messages from clients.",
+          "2. Containerizing the Server and Clients: Both the server and client applications are packaged into a single Docker container. This approach simplifies deployment and management on AWS ECS with Fargate.",
+          "3. Terraform Configuration: The Terraform configuration files define all the AWS resources needed for the architecture. This includes: ECS Cluster and Fargate Task Definitions, API Gateway WebSocket Endpoint, DynamoDB Table, and IAM Roles and Policies.",
+          "4. Deploying to AWS: With the Terraform configuration in place, deploying the architecture is as simple as running `terraform apply`. Terraform handles the provisioning of all resources, and within minutes, the WebSocket server is up and running on AWS.",
+        ],
+      },
+      {
+        subtitle: "Scalability and Performance",
+        paragraphs: [
+          "One of the key advantages of this architecture is its ability to scale automatically. As the number of clients or the volume of data increases, ECS and Fargate can scale the infrastructure to meet demand. This ensures that we maintain low latency, which is critical for real-time applications like cryptocurrency trading.",
+          "The use of WebSockets provides a low-latency, bidirectional communication channel, making it ideal for scenarios where timely data delivery is essential. In the context of cryptocurrency trading, this enables price arbitrage opportunities by allowing traders to react quickly to price changes across different exchanges.",
+        ],
+      },
+      {
+        subtitle: "Conclusion",
+        paragraphs: [
+          "Deploying a WebSocket server architecture on AWS using Terraform offers a scalable, resilient, and low-latency solution for real-time data processing. Whether you're building a cryptocurrency trading platform or any other real-time application, this architecture can serve as a solid foundation.",
+          "By leveraging AWS services like ECS, Fargate, and DynamoDB, and managing the infrastructure with Terraform, we can ensure that the system is both flexible and easy to maintain. This setup not only meets the demands of today but is also prepared to scale as the business grows.",
+          "This blog serves as a starting point for deploying your own WebSocket server on AWS. With the information provided, you should be well-equipped to build a similar architecture tailored to your specific needs.",
+          "* WARNING: I provide an open-source boilerplate, so some elements may be missing or incomplete. Please feel free to ask if you have any questions or need further details.",
+          "* USING AT YOUR OWN RISK: This blog is for educational purposes only. I am not responsible for any misuse or damage caused by the information provided.",
         ],
       },
     ],
-    created_at: "2022-09-02",
+    created_at: "2024-03-14",
     author_name: "Julien",
-    badge_techno: ["Python", "Terraform", "AWS"],
+    badge_techno: [
+      "Python",
+      "Terraform",
+      "AWS",
+      "API Gateway",
+      "DynamoDB",
+      "Lambda",
+    ],
     pictures: {
       main_picture: "/testhighlvl.png",
     },
-    github_link: "",
+    github_link: "https://github.com/JulienC-Dev/my-website-app",
   },
 ];
 

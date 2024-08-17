@@ -58,7 +58,10 @@ export function NavigationMenuHeader() {
               >
                 Deploying a K8s Cluster on AWS using Ansible.
               </ListItem>
-              <ListItem href="/" title="Websocket">
+              <ListItem
+                href="/blog/websokets-python-terraform-aws-services"
+                title="Websocket"
+              >
                 Cool websocket implementation for real-time data using Terraform
                 & AWS.
               </ListItem>
