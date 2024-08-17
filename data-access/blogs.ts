@@ -70,7 +70,7 @@ const getBlogs: Blog[] = [
     author_name: "Julien",
     badge_techno: ["Ansible", "AWS", "EC2", "K8s"],
     pictures: {
-      main_picture: "/testhighlvl.png",
+      main_picture: "/ansible-k8s-cluster.png",
     },
     github_link: "https://github.com/JulienC-Dev/my-website-app",
   },
