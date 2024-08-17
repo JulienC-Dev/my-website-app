@@ -142,7 +142,7 @@ const getBlogs: Blog[] = [
   },
   {
     id_blog: "self",
-    title: "My journey & projects",
+    title: "My journey and projects",
     sections: [
       {
         subtitle: "Introduction",
