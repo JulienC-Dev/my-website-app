@@ -136,7 +136,7 @@ const getBlogs: Blog[] = [
       "Lambda",
     ],
     pictures: {
-      main_picture: "/testhighlvl.png",
+      main_picture: "/websocket-aws-cluster.png",
     },
     github_link: "https://github.com/JulienC-Dev/my-website-app",
   },
