@@ -72,7 +72,7 @@ const getBlogs: Blog[] = [
     pictures: {
       main_picture: "/ansible-k8s-cluster.png",
     },
-    github_link: "https://github.com/JulienC-Dev/my-website-app",
+    github_link: "https://github.com/JulienC-Dev/boilerplate-create-cluster-K8s-aws-with-ansible",
   },
   {
     id_blog: "websokets-python-terraform-aws-services",
