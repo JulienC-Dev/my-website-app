@@ -138,7 +138,7 @@ const getBlogs: Blog[] = [
     pictures: {
       main_picture: "/websocket-aws-cluster.png",
     },
-    github_link: "https://github.com/JulienC-Dev/boilerplate-websocket-aws-cryptos?tab=readme-ov-file#license",
+    github_link: "https://github.com/JulienC-Dev/boilerplate-websocket-aws-cryptos",
   },
   {
     id_blog: "self",
