@@ -1,17 +1,28 @@
+"use client";
 import { Badge } from "@/components/ui/badge";
 import { Icons } from "@/components/ui/Icons";
 import { getBlogById } from "@/data-access/blogs";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Blog({ params }: { params: { slug: string } }) {
   const blog = getBlogById(params.slug);
+  const [fullScreenImage, setFullScreenImage] = useState<string | null>(null);
+
+  const handleImageClick = (src: string) => {
+    setFullScreenImage(src);
+  };
+
+  const handleCloseFullScreen = () => {
+    setFullScreenImage(null);
+  };
 
   return (
     <div>
       <article className="container relative max-w-3xl py-6 lg:py-10">
         <div>
           <p className="block text-sm text-muted-foreground">
-            Published on {new Date(blog?.created_at).toLocaleDateString()}
+            Published on {blog?.created_at}
           </p>
           <h1 className="scroll-m-20 text-3xl font-bold pt-4 tracking-tight lg:text-3xl">
             {blog?.title}
@@ -48,7 +59,8 @@ export default function Blog({ params }: { params: { slug: string } }) {
             alt={blog.title}
             width={720}
             height={405}
-            className="my-8 rounded-md border bg-muted transition-colors"
+            className="my-8 rounded-md border bg-muted transition-colors cursor-pointer"
+            onClick={() => handleImageClick(blog.pictures.main_picture)}
             priority
           />
         )}
@@ -75,12 +87,29 @@ export default function Blog({ params }: { params: { slug: string } }) {
                 alt={blog.title}
                 width={720}
                 height={405}
-                className="my-8 rounded-md border bg-muted transition-colors"
+                className="my-8 rounded-md border bg-muted transition-colors cursor-pointer"
+                onClick={() => handleImageClick(picture)}
                 priority
               />
             ))}
         </div>
       </article>
+
+      {fullScreenImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 cursor-pointer"
+          onClick={handleCloseFullScreen}
+        >
+          <Image
+            src={fullScreenImage}
+            alt="Full-screen image"
+            layout="intrinsic"
+            width={1920}
+            height={1080}
+            className="rounded-md max-w-full max-h-full object-contain"
+          />
+        </div>
+      )}
     </div>
   );
 }

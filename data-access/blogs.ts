@@ -125,7 +125,7 @@ const getBlogs: Blog[] = [
         ],
       },
     ],
-    created_at: "2024-10-2",
+    created_at: "2024-02-15",
     author_name: "Julien",
     badge_techno: [
       "Python",
@@ -198,7 +198,7 @@ const getBlogs: Blog[] = [
         ],
       },
     ],
-    created_at: "2024-5-20",
+    created_at: "2023-10-12",
     author_name: "Julien",
     badge_techno: ["self"],
     pictures: {
@@ -222,7 +222,7 @@ const getBlogs: Blog[] = [
         paragraphs: ["In Construction ", "🚧🚧🚧🚀🚀🚀"],
       },
     ],
-    created_at: "2024-5-20",
+    created_at: "2024-05-20",
     author_name: "Julien",
     badge_techno: ["K8s", "Linux", "Containerization", "hashicorp vault"],
     pictures: {
