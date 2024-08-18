@@ -88,7 +88,9 @@ const CommandInput: React.FC = () => {
           <span className="text-amber-800">@julien</span>
           <span>:~$ </span>
         </p>
-        <AsciiArtJulien />
+        <div className="hidden md:block">
+          <AsciiArtJulien />
+        </div>
         <p>Welcome to my interactive web terminal.</p>
         <p> For a list of available commands, type 'help'.</p>
       </div>
